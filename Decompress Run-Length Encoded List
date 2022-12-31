@@ -1,0 +1,27 @@
+#Approach
+loop with i+2;
+store the freq. first
+then value
+then taking the loop to freq and pushing to the vector the same for the value;
+
+
+
+
+#code
+class Solution {
+public:
+    vector<int> decompressRLElist(vector<int>& nums) {
+        vector<int> res;
+        int size = nums.size();
+        
+        for(int i =0;i<size;i=i+2){
+          int freq = nums[i];
+           int val = nums[i+1];
+           for(int j=0;j<freq;j++){
+               res.push_back(val);
+           }
+            
+        }
+        return res;
+    }
+};
