@@ -1,3 +1,6 @@
+// Approach
+// Negative Number set to be zero and take maximum_sum = max(current_sum, maximum_sum);
+
 #include <iostream>
 using namespace std;
 
